@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="sursa">
+        Lorem ipsum dolor sit +4079 834 5637 amet consectetur adipisicing elit. 071234567 Voluptates ex a nobis, natus illo id? 0764 123 768 Ad id quis
+        aliquam porro, +4000793582749 neque facilis +400074583726543expedita magni,0776598347 quas hic voluptate corrupti quia reiciendis!0799991113
+    </p>
+    <p id="destinatie"></p>
+    <script>
+        let sursa = document.getElementById('sursa').innerHTML ;
+        console.log(sursa);
+        let pattern=/[\+]?[0-9\s]{10,16}/g;
+        let result= sursa.match(pattern);
+        document.getElementById("destinatie").innerHTML = result;
+
+    </script>
+</body>
+
+</html>
