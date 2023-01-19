@@ -63,16 +63,15 @@ function displayMenuButtons() {
         let displayMenu = menuItems.map(function (item) {
 
             return `<article class="menu-item">
-                <img src="./img/item-10.jpeg" alt="menu item" class="photo" />
+                <img src=${item.img}alt=${item.title} class="photo" />
                 <div class="item-info">
                   <header>
-                    <h4>buttermilk pancakes</h4>
-                    <h4 class="price">15 RON</h4>
+                    <h4>${item.title}</h4>
+                    <h4 class="price">${item.price}</h4>
                   </header>
                   <p class="item-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
-                    laboriosam excepturi! Quo, officia.
+                  ${item.desc}
+               
                   </p>
                 </div>
               </article>`
